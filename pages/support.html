@@ -1,31 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Text Styles Support</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-<nav class="nav">
-  <div id="home">
-    <div class="add-on-title">
-      Text Styles
-    </div>
-    <div class="author-name">
-      By Leland Cuellar
-    </div>
-    <div class="top-div">
-      <a class="top-menu" href="/index.html">Home</a>
-      <a class="top-menu" href="/pages/privacy-policy.html">Privacy Policy</a>
-      <a class="top-menu" href="/pages/terms-of-service.html">Terms of Service</a>
-      <a class="top-menu" href="/pages/support.html">Support</a>
-    </div>
-  </div>
-</nav>
-<main id="app">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Styles Support</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div id="home">
+        <div class="add-on-title">Text Styles</div>
+        <div class="author-name">By Leland Cuellar</div>
+        <div class="top-div">
+          <a class="top-menu" href="/index.html">Home</a>
+          <a class="top-menu" href="/pages/privacy-policy.html">Privacy Policy</a>
+          <a class="top-menu" href="/pages/terms-of-service.html">Terms of Service</a>
+          <a class="top-menu" href="/pages/support.html">Support</a>
+        </div>
+      </div>
+    </nav>
+    <main id="app">
+      <div id="stylized-title">
+        &lt;T&gt;Text Styles&lt;/T&gt;
+      </div>
+      <h1>Trouble Shooting Guide/Common Problems:</h1>
+      <h3>Your Style Is Not Working Properly</h3>
+      <p>If clicking ‘Apply Style’ results in something different than what you wanted, you might have entered something wrong, in which case the program resets to its defaults. Double-check that you’ve correctly entered all information, for example, the font is spelled correctly and the colors are in proper hex format (i.e., #0084ff). You can find the hex value of any color using the Google Docs Custom Color feature or using any number of online tools.</p>
 
-</main>
-</body>
+      <h3>Not Saving Styles Before Using Them</h3>
+      <p>Not saving a style before trying to use it can cause some problems. It’s always best practice to save a style before trying to use it.</p>
+
+      <h3>Clicking ‘view less’ Options Before Saving</h3>
+      <p>After clicking ‘view more styling options’, you’ll see additional styling options available like ‘font-size’, ‘underline’, ‘bold’, and ‘italicize’. However, if you select different advanced styling options and don’t save the style before clicking ‘view less’, all your selections will be reset to their defaults.</p>
+
+      <h3>Trying To Get Styling To Work Across New Lines</h3>
+      <p>Unfortunately, by the nature of Google Docs, styling across new lines (paragraph breaks) is nonviable. If you try to put a start character here like this &lt; and then have text on a new line like this &gt;, it will not work. However, if you really need this to work, you can press ‘Shift+Enter’ (called a soft break) instead of just ‘Enter’, and it will work then. Otherwise, you need to place an ending marker at the end of every paragraph and before a new line.</p>
+
+      <h3>Saving a New Style With the Same Name as a Previous One</h3>
+      <p>Unique names are required for all styles. Trying to save a new style with the same name as an old one will only result in the old style being overwritten.</p>
+
+      <h3>Recurring Problem That Was Not Covered Here</h3>
+      <p>If you’ve noticed a recurring problem that hasn’t been mentioned above, please give me a description of the issue <a href="https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension/issues" target="_blank">Here</a>. Click on the green ‘Issue’ button in the top right corner, add a title and description, then scroll down and click the green ‘Create’ button in the bottom right-hand corner.</p>
+
+    </main>
+  </body>
 </html>
