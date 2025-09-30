@@ -79,10 +79,32 @@ main {
     margin-bottom: 1rem;
 }
 
+.code {
+    background-color: #efefef;
+    font-family: Consolas, monospace;
+    font-size: 95%;
+}
+
+#formula {
+    background-color: #fffd61;
+    font-family: Times New Roman, serif;
+    font-size: 110%;
+}
+
+#question-styling {
+    color: #0055aa;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#todo-styling {
+    color: #ff0000;
+    font-weight: bold;
+}
+
 footer {
     background-color: #1a73e8;
     padding: 0.8rem;
-
 }
 
 #footer-text {
