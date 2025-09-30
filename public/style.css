@@ -75,9 +75,17 @@ main {
     margin-bottom: 1rem;
 }
 
+footer {
+    background-color: #1a73e8;
+    padding: 0.8rem;
 
+}
 
-
+#footer-text {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    margin-left: 5rem;
+}
 
 
 /*@font-face {*/
