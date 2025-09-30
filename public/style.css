@@ -151,11 +151,30 @@ footer {
     font-size: 1.1rem;
 }
 
+/*.footer-logo {*/
+/*    width: 4.5rem;*/
+/*    height: 4.5rem;*/
+/*    margin-left: 0.5rem;*/
+/*    margin-right: 0.1rem;*/
+/*}*/
+
 .footer-logo {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-left: 0.5rem;
+    width: 2.5rem;
+    height: 2rem;
+    margin-left: 0.4rem;
     margin-right: 0.1rem;
+}
+
+.footer-logo-div {
+    background-color: whitesmoke;
+    border-radius: 30%;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
