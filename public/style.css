@@ -135,16 +135,27 @@ main {
 footer {
     background-color: #1a73e8;
     padding: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #footer-text {
     color: whitesmoke;
     font-size: 1.1rem;
-    margin-left: 5rem;
+    margin-left: 3.5rem;
 }
 
 .footer-link {
     color: #5effb7;
+    font-size: 1.1rem;
+}
+
+.footer-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.1rem;
 }
 
 
