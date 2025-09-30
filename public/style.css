@@ -65,9 +65,13 @@ body {
 
 /* Main content */
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
+}
+
+#app-home {
+    max-width: 900px;
 }
 
 .title {
@@ -85,6 +89,10 @@ footer {
     color: whitesmoke;
     font-size: 1.1rem;
     margin-left: 5rem;
+}
+
+.footer-link {
+    color: #5effb7;
 }
 
 
