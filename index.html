@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
+    <link rel="icon" type="image/png" href="public/text-styles-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="/style.css" />
@@ -10,9 +10,13 @@
   <body>
     <nav class="nav">
       <div id="brand">
-        <div class="add-on-title">Text Styles</div>
-        <div class="author-name">By Leland Cuellar</div>
+        <img id="addon-icon" src="public/text-styles-icon.png" alt="Text Styles Icon">
+        <div id="brand-names">
+          <div class="add-on-title">Text Styles</div>
+          <div class="author-name">By Leland Cuellar</div>
+        </div>
       </div>
+
       <div class="top-div">
         <a class="top-menu" href="/index.html">Home</a>
         <a class="top-menu" href="/pages/privacy-policy.html">Privacy Policy</a>
@@ -27,10 +31,10 @@
       <section id="about-paragraphs">
         <h1 class="title">About</h1>
         <p>
-          I got the idea for <em>Text Styles</em> when I was an undergraduate studying Computer Science to earn my BS. I was taking a lot of notes on coding and programming in Google Docs, which led to a problem. Especially when ‘code’ stuff was embedded within my plain English ‘notes’ stuff, it became hard to tell what was actual code and what was English. I started reformatting my ‘code’ to have a different font and look than my ‘English’, but because of the amount of notes I was taking, that slowly got more and more annoying. I knew there had to be a better way to do this. I had used GitHub before, and learned how to use <i>.md</i> (Markdown) files. Markdown works by formatting text within certain markers (essentially). For example, if you want text to be bold, you just surround it with two asterisks like this **bold text here** --&gt; <b>bold text here</b>. I realized there had to be a way I could do something similar in Google Docs.
+          I got the idea for <em>Text Styles</em> when I was an undergraduate studying Computer Science to earn my BS. I was taking a lot of notes on coding and programming in Google Docs, which led to a problem. Especially when ‘code’ stuff was embedded within my plain English ‘notes’ stuff, it became hard to tell what was actual code and what was English. I started reformatting my ‘code’ to have a different font and look than my ‘English’, but because of the amount of notes I was taking, that slowly got more and more frustrating and took more and more of my time. I knew there had to be a better way.
         </p>
         <p>
-          That’s where <em>Text Styles</em> comes in. <em>Text Styles</em> is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use. For example, you could create a style called “Code” with the font set to “Consolas”, the highlight color set to “#efefef” (which is light gray), and use the less-than character “&lt;” as your starting marker and the greater-than character “&gt;” as your ending marker. You can also optionally have the program delete the markers after running. Then you just write your notes like normal, except you can talk about how to print stuff in Python like &lt;print(“Hello World”)&gt; or in Java like &lt;System.out.println(“Hello World”)&gt; which are quite different. When you’re finished, simply pull up <em>Text Styles</em> and hit Apply Style. You’ll end up with notes that look like: you can talk about how to print stuff in Python like <span class="code">print(“Hello World”)</span> or in Java like <span class="code">System.out.println(“Hello World”)</span> which are quite different.
+          That’s where <strong><em>Text Styles</em></strong> comes in. <em>Text Styles</em> is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use. For example, you could create a style called “Code” with the font set to “Consolas”, the highlight color set to “#efefef” (which is light gray), and use the less-than character “&lt;” as your starting marker and the greater-than character “&gt;” as your ending marker. You can also optionally have the program delete the markers after running. Then you just write your notes like normal, except you can talk about how to print stuff in Python like &lt;print(“Hello World”)&gt; or in Java like &lt;System.out.println(“Hello World”)&gt; which are quite different. When you’re finished, simply pull up <em>Text Styles</em> and hit Apply Style. You’ll end up with notes that look like: you can talk about how to print stuff in Python like <span class="code">print(“Hello World”)</span> or in Java like <span class="code">System.out.println(“Hello World”)</span> which are quite different.
         </p>
         <p>
           However, <em>Text Styles</em> isn’t just useful to people taking notes on coding; it can be used by everyone for anything. Here are more examples of different ways you can find this add-on useful:

@@ -16,8 +16,22 @@ body {
     align-items: center;
 }
 
-#brand {
+#addon-icon {
     margin-left: 4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#brand-names {
+    margin-left: 1rem;
 }
 
 .add-on-title {
