@@ -24,47 +24,57 @@
       &lt;<span class="stylized-t">T</span>&gt;Text Styles&lt;/<span class="stylized-t">T</span>&gt;
     </div>
     <main id="app-home">
-      <h1 class="title">About</h1>
-      <p>
-        I got the idea for <em>Text Styles</em> when I was an undergraduate studying Computer Science to earn my BS. I was taking a lot of notes on coding and programming in Google Docs, which led to a problem. Especially when ‘code’ stuff was embedded within my plain English ‘notes’ stuff, it became hard to tell what was actual code and what was English. I started reformatting my ‘code’ to have a different font and look than my ‘English’, but because of the amount of notes I was taking, that slowly got more and more annoying. I knew there had to be a better way to do this. I had used GitHub before, and learned how to use <i>.md</i> (Markdown) files. Markdown works by formatting text within certain markers (essentially). For example, if you want text to be bold, you just surround it with two asterisks like this **bold text here** --&gt; <b>bold text here</b>. I realized there had to be a way I could do something similar in Google Docs.
-      </p>
-      <p>
-        That’s where <em>Text Styles</em> comes in. <em>Text Styles</em> is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use. For example, you could create a style called “Code” with the font set to “Consolas”, the highlight color set to “#efefef” (which is light gray), and use the less-than character “&lt;” as your starting marker and the greater-than character “&gt;” as your ending marker. You can also optionally have the program delete the markers after running. Then you just write your notes like normal, except you can talk about how to print stuff in Python like &lt;print(“Hello World”)&gt; or in Java like &lt;System.out.println(“Hello World”)&gt; which are quite different. When you’re finished, simply pull up <em>Text Styles</em> and hit Apply Style. You’ll end up with notes that look like: you can talk about how to print stuff in Python like <span class="code">print(“Hello World”)</span> or in Java like <span class="code">System.out.println(“Hello World”)</span> which are quite different.
-      </p>
-      <p>
-        However, <em>Text Styles</em> isn’t just useful to people taking notes on coding; it can be used by everyone for anything. Here are more examples of different ways you can find this add-on useful:
-      </p>
+      <section id="about-paragraphs">
+        <h1 class="title">About</h1>
+        <p>
+          I got the idea for <em>Text Styles</em> when I was an undergraduate studying Computer Science to earn my BS. I was taking a lot of notes on coding and programming in Google Docs, which led to a problem. Especially when ‘code’ stuff was embedded within my plain English ‘notes’ stuff, it became hard to tell what was actual code and what was English. I started reformatting my ‘code’ to have a different font and look than my ‘English’, but because of the amount of notes I was taking, that slowly got more and more annoying. I knew there had to be a better way to do this. I had used GitHub before, and learned how to use <i>.md</i> (Markdown) files. Markdown works by formatting text within certain markers (essentially). For example, if you want text to be bold, you just surround it with two asterisks like this **bold text here** --&gt; <b>bold text here</b>. I realized there had to be a way I could do something similar in Google Docs.
+        </p>
+        <p>
+          That’s where <em>Text Styles</em> comes in. <em>Text Styles</em> is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use. For example, you could create a style called “Code” with the font set to “Consolas”, the highlight color set to “#efefef” (which is light gray), and use the less-than character “&lt;” as your starting marker and the greater-than character “&gt;” as your ending marker. You can also optionally have the program delete the markers after running. Then you just write your notes like normal, except you can talk about how to print stuff in Python like &lt;print(“Hello World”)&gt; or in Java like &lt;System.out.println(“Hello World”)&gt; which are quite different. When you’re finished, simply pull up <em>Text Styles</em> and hit Apply Style. You’ll end up with notes that look like: you can talk about how to print stuff in Python like <span class="code">print(“Hello World”)</span> or in Java like <span class="code">System.out.println(“Hello World”)</span> which are quite different.
+        </p>
+        <p>
+          However, <em>Text Styles</em> isn’t just useful to people taking notes on coding; it can be used by everyone for anything. Here are more examples of different ways you can find this add-on useful:
+        </p>
+      </section>
 
-      <h3>Academic Notes & Study Guides</h3>
-      <p>
-        Students can create styles for definitions, formulas, or important names. For example, always bold key terms like <b>osmosis</b> or highlight math formulas like <span id="formula">E = mc^2</span>. That way, review notes stay consistent and easy to skim.
-      </p>
+      <section id="example-use-cases">
+        <div>
+          <h3>Academic Notes & Study Guides</h3>
+          <p>
+            Students can create styles for definitions, formulas, or important names. For example, always bold key terms like <b>osmosis</b> or highlight math formulas like <span id="formula">E = mc^2</span>. That way, review notes stay consistent and easy to skim.
+          </p>
 
-      <h3>Drafting A Story?</h3>
-      <p>
-        Make custom styles for character dialogue, narration, or editor’s notes. For instance, use markers like {} around character names while typing and instantly apply italics or boldness when done.
-      </p>
+          <h3>Drafting A Story?</h3>
+          <p>
+            Make custom styles for character dialogue, narration, or editor’s notes. For instance, use markers like {} around character names while typing and instantly apply italics or boldness when done.
+          </p>
 
-      <h3>Teaching & Instructing</h3>
-      <p>
-        Educators can standardize lesson materials by creating reusable styles for assignments, discussion questions, or important reminders. Instead of manually reformatting each time, they just drop in markers like Q[What is photosynthesis?] --&gt; <span id="question-styling">What is photosynthesis?</span>
-      </p>
+          <h3>Teaching & Instructing</h3>
+          <p>
+            Educators can standardize lesson materials by creating reusable styles for assignments, discussion questions, or important reminders. Instead of manually reformatting each time, they just drop in markers like Q[What is photosynthesis?] --&gt; <span id="question-styling">What is photosynthesis?</span>
+          </p>
 
-      <h3>Researching</h3>
-      <p>
-        While writing papers, researchers often annotate text with highlights, keywords, or citations. With <em>Text Styles</em>, they could mark references like &lt;[Smith 2023]&gt; and have them instantly formatted in a consistent way.
-      </p>
+          <h3>Researching</h3>
+          <p>
+            While writing papers, researchers often annotate text with highlights, keywords, or citations. With <em>Text Styles</em>, they could mark references like &lt;[Smith 2023]&gt; and have them instantly formatted in a consistent way.
+          </p>
 
-      <h3>Business Professionals</h3>
-      <p>
-        In meeting notes or proposals, someone could use styles to highlight action items, deadlines, or decisions. For example, typing TODO[item here] could automatically turn into bold red text that’s easy to spot later: <span id="todo-styling">Schedule meeting with clients</span>.
-      </p>
+          <h3>Business Professionals</h3>
+          <p>
+            In meeting notes or proposals, someone could use styles to highlight action items, deadlines, or decisions. For example, typing TODO[item here] could automatically turn into bold red text that’s easy to spot later: <span id="todo-styling">Schedule meeting with clients</span>.
+          </p>
 
-      <h3>Infinite Possibilities</h3>
-      <p>
-        These are just a few of the many different ways you can use <em>Text Styles</em> in Google Docs. One of the best parts about this add-on is that it's so customizable. The only limit is your imagination!
-      </p>
+          <h3>Infinite Possibilities</h3>
+          <p>
+            These are just a few of the many different ways you can use <em>Text Styles</em> in Google Docs. One of the best parts about this add-on is that it's so customizable. The only limit is your imagination!
+          </p>
+        </div>
 
+        <div id="example-images">
+          <img class="ex-images" src="public/textstyles-ex-home-page.png" alt="Text Styles Example Home Page">
+          <img class="ex-images" src="public/ex-style-page.png" alt="Text Styles Example Style Page">
+        </div>
+      </section>
     </main>
     <footer>
       <p id="footer-text"><strong><em>Text Styles</em></strong> is an open-source project. If you'd like to see the code behind it,
