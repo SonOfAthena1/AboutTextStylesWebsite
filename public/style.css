@@ -140,36 +140,42 @@ footer {
     align-items: center;
 }
 
+#footer-h3 {
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin-left: 4.5rem;
+    margin-right: 0.5rem;
+}
+
 #footer-text {
     color: whitesmoke;
     font-size: 1.1rem;
-    margin-left: 3.5rem;
+    margin-left: 7.5rem;
 }
 
 .footer-link {
-    color: #5effb7;
+    color: #abebff;
     font-size: 1.1rem;
 }
 
-/*.footer-logo {*/
-/*    width: 4.5rem;*/
-/*    height: 4.5rem;*/
-/*    margin-left: 0.5rem;*/
-/*    margin-right: 0.1rem;*/
-/*}*/
-
-.footer-logo {
+.linkedIn-footer-logo {
     width: 2.5rem;
     height: 2rem;
     margin-left: 0.4rem;
     margin-right: 0.1rem;
 }
 
+.github-footer-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 .footer-logo-div {
     background-color: whitesmoke;
     border-radius: 30%;
     padding: 0.2rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
     width: 2.75rem;
     height: 2.75rem;
     display: flex;
