@@ -71,10 +71,11 @@ body {
     font-weight: bold;
     padding: 3rem;
     letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(20, 20, 20, 10);
 }
 
 .stylized-t {
-    color: #c600ac;
+    color: #ac00c6;
 }
 
 /* Main content */
@@ -138,6 +139,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0 0 6px rgba(26, 115, 232);
 }
 
 #footer-h3 {
