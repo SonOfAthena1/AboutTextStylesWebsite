@@ -46,5 +46,5 @@ If you need help with Text Styles, you can:
 
 ## License
 
-This website is licensed under the [MIT License](https://github.com/SonOfAthena1/AboutTextStylesWebsite/blob/master/LICENSE)
+This website is licensed under the [MIT License](https://github.com/SonOfAthena1/AboutTextStylesWebsite/blob/master/LICENSE)  
 Text Styles™ add-on source code: **PolyForm Noncommercial 1.0.0** (see the add-on repo).
