@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Built with HTML/CSS](https://img.shields.io/badge/Built%20with-HTML%20%26%20CSS-blue)
 
-This repository hosts the website for **Text Styles**, a Google Docs add-on that lets you create, save, and apply custom markdown-style formatting in your documents.
+This repository hosts the website for **Text Styles™**, a Google Docs add-on that lets you create, save, and apply custom markdown-style formatting in your documents.
 
 🔗 Add-on Repository: [SonOfAthena1/Text-Styles-Google-Docs-Extension](https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension)
 
@@ -11,7 +11,7 @@ This repository hosts the website for **Text Styles**, a Google Docs add-on that
 
 ## About the Add-on
 
-**Text Styles** is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use.  
+**Text Styles™** is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use.  
 
 For example, you could define a style called **"Code"** with:
 - Font set to **Consolas**  
@@ -46,4 +46,5 @@ If you need help with Text Styles, you can:
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/SonOfAthena1/AboutTextStylesWebsite/blob/master/LICENSE)
+This website is licensed under the [MIT License](https://github.com/SonOfAthena1/AboutTextStylesWebsite/blob/master/LICENSE)  
+Text Styles™ add-on source code: **PolyForm Noncommercial 1.0.0** (see the add-on repo).
