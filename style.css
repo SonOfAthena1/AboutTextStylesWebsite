@@ -191,6 +191,46 @@ footer {
     align-items: center;
 }
 
+.dev-page {
+    padding: 1rem 0;
+}
+
+/* Two-column layout that collapses on small screens */
+.dev-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .dev-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dev-photo {
+    display: grid;
+    gap: 1rem;
+}
+
+.dev-img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.dev-orgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orgLogos {
+    width: 4rem;
+    height: 4rem;
+}
 
 /*@font-face {*/
 /*    font-family: "JetBrains Sans";*/

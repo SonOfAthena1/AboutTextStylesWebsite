@@ -32,6 +32,73 @@
       &lt;<span class="stylized-t">T</span>&gt;Text Styles&lt;/<span class="stylized-t">T</span>&gt;
     </div>
 
+    <!-- Main content -->
+    <main id="app">
+      <h1 class="title">Developer Info</h1>
+
+      <!--
+        Layout: two columns
+        - Left: image (headshot / logo) + quick badges
+        - Right: structured sections for name, role, bio, links, contact, etc.
+        You can style .dev-grid as a grid or flex container in CSS.
+      -->
+      <section class="dev-page">
+        <div class="dev-grid">
+          <!-- LEFT COLUMN -->
+          <aside class="dev-photo">
+            <!-- Replace with your photo; keep alt descriptive -->
+            <img src="public/meOnTheGlacierProfilePhoto.jpg" alt="Profile Photo" class="dev-img" />
+
+            <div class="dev-quick">
+              <!-- Small, stylable pill/badge areas -->
+              <span class="dev-badge">Creator • Text Styles™</span>
+              <span class="dev-badge"><br>Location: San Diego, CA</span>
+              <span class="dev-badge"><br>Open to: Hiring for Summer 2026</span>
+            </div>
+          </aside>
+
+          <!-- RIGHT COLUMN -->
+          <div class="dev-details">
+            <header class="dev-header">
+              <h2 class="dev-name">Leland Cuellar</h2>
+              <p class="dev-role">Student at San Diego State University</p>
+              <p class="dev-tagline">Computer Science Major | Math Minor | MSLC Tutor | ACM @ SDSU | WCO @ SDSU | Calisthenics Athlete</p>
+            </header>
+            
+            <section class="dev-orgs">
+              <img style="height: 3rem" src="public/MSLC_logo.png" alt="MSLC Logo">
+              <img class="orgLogos" src="public/acmAtsdsu_logo.jpg" alt="SDSU Logo">
+              <img class="orgLogos" src="public/WCOsdsu_logo.jpg" alt="WCO Logo">
+              <img class="orgLogos" src="public/aztecthenix_logo_transparent.png" alt="Aztecthenics Logo">
+
+            </section>
+            
+            <section class="dev-links">
+              <h3>Links</h3>
+              <ul class="link-list">
+                <!-- Keep internal links relative to your site; external open in new tab -->
+                <li><a href="https://workspace.google.com/marketplace" target="_blank" rel="noopener">Workspace Marketplace listing</a></li>
+                <li><a href="https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension" target="_blank" rel="noopener">Source code</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="dev-bio">
+        <h3>About</h3>
+        <p>
+          I’ve never been very good at art.<br><br>
+          Drawing, playing music, or crafting never called to me. Coding, however...changed my life. <br><br>
+          It wasn’t until my first coding class in 7th grade (Python) that I experienced the joy and passion that comes with being able to express yourself and your creativity. Not only did I immediately fall in love with coding because it allowed me to express myself, but it was also all about problem-solving and thinking logically, just like one of my other passions, math. I went out of my way to add cool extra effects to all my coding assignments because I enjoyed it so much.<br><br>
+          Suffice it to say, it was my favorite class, and I have continued to love it since. Sadly, I went to a small high school, and coding wasn’t offered as a class. The best I could do was digital art and mixed media, where we did art projects using p5.js. Luckily, I had a cool teacher, who allowed me to go off learning on my own and do much trickier and more technically difficult projects than the rest of the class.<br><br>
+          Now, as a student at SDSU, I’m majoring in Computer Science, and loving every second of it. I am also still exploring programming on my own, which is currently App Development in Android Studio using Kotlin. I’m still in the learning phase, but someday, I plan to create my own app and publish it to the Google Play Store.<br><br>
+          I am currently looking for a Software Engineering, Full Stack, AI/ML, or Quality Assurance Tester Internship so that I can learn from industry professionals and get some experience under my belt.
+        </p>
+      </section>
+
+    </main>
+
     <footer>
       <h3 id="footer-h3">Contact</h3>
       <a href="https://www.linkedin.com/in/leland-cuellar" target="_blank" rel="noopener">
