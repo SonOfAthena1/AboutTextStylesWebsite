@@ -13,6 +13,10 @@ dist-ssr
 *.local
 
 public/meOnTheGlacierProfilePhoto.jpg
+public/acmAtsdsu_logo.jpg
+public/aztecthenix_logo_transparent.png
+public/MSLC_logo.png
+public/WCOsdsu_logo.jpg
 
 # Editor directories and files
 .vscode/*
