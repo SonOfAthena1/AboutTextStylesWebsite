@@ -231,6 +231,10 @@ footer {
     height: 4rem;
 }
 
+.dev-bio {
+    padding-bottom: 2rem;
+}
+
 /*@font-face {*/
 /*    font-family: "JetBrains Sans";*/
 /*    src: url("fonts/JetBrainsSans-Regular.woff2");*/
