@@ -29,6 +29,7 @@ body {
     font-size: 1rem;
     line-height: 1.75;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 img {
@@ -49,25 +50,46 @@ a:focus-visible {
 
 /* Navigation */
 .nav {
+    position: relative;
+    isolation: isolate;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    min-height: 84px;
-    padding: 0.9rem max(1.25rem, calc((100vw - 1180px) / 2));
-    background: linear-gradient(120deg, var(--blue-dark), var(--blue));
-    box-shadow: 0 8px 30px rgba(14, 72, 145, 0.2);
+    min-height: 100px;
+    padding: 1.05rem max(1.5rem, calc((100vw - 1240px) / 2));
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% -80%, rgba(255, 255, 255, 0.35), transparent 48%),
+        linear-gradient(115deg, #0b52a8 0%, var(--blue) 58%, #4c46d8 130%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow:
+        0 16px 38px rgba(8, 55, 116, 0.28),
+        inset 0 1px rgba(255, 255, 255, 0.22),
+        inset 0 -12px 30px rgba(5, 44, 96, 0.12);
+    animation: nav-arrive 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.nav::before {
+    position: absolute;
+    z-index: -1;
+    inset: -180% 38% -180% 18%;
+    transform: rotate(22deg);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.09), transparent);
+    content: "";
 }
 
 #brand {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     flex: 0 0 auto;
 }
 
 #addon-icon {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
     margin: 0;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 14px;
@@ -82,7 +104,7 @@ a:focus-visible {
 
 .add-on-title {
     color: #ffffff;
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
     font-weight: 750;
     letter-spacing: -0.02em;
 }
@@ -90,11 +112,13 @@ a:focus-visible {
 .author-name {
     margin: 0.3rem 0 0;
     color: rgba(255, 255, 255, 0.78);
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
 .top-div {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -105,11 +129,12 @@ a:focus-visible {
 
 .top-menu {
     margin: 0;
-    padding: 0.55rem 0.72rem;
-    border-radius: 9px;
+    padding: 0.68rem 0.9rem;
+    border: 1px solid transparent;
+    border-radius: 11px;
     color: rgba(255, 255, 255, 0.88);
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1.08rem;
+    font-weight: 650;
     line-height: 1.2;
     text-decoration: none;
     transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
@@ -117,25 +142,47 @@ a:focus-visible {
 
 .top-menu:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 8px 22px rgba(5, 42, 91, 0.15);
     transform: translateY(-1px);
 }
 
 /* Product banner */
 #banner {
+    position: relative;
+    isolation: isolate;
     padding: clamp(2.75rem, 8vw, 6.5rem) 1rem;
     overflow: hidden;
     color: #f8fafc;
     background:
-        radial-gradient(circle at 50% 115%, rgba(172, 0, 198, 0.3), transparent 43%),
-        linear-gradient(135deg, #111827, #030712);
-    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.08);
+        radial-gradient(circle at 18% 0%, rgba(26, 115, 232, 0.2), transparent 32%),
+        radial-gradient(circle at 82% 120%, rgba(172, 0, 198, 0.32), transparent 38%),
+        linear-gradient(145deg, #151b2a 0%, #030712 58%, #15051d 100%);
+    border-bottom: 1px solid rgba(172, 0, 198, 0.2);
+    box-shadow:
+        0 24px 48px rgba(3, 7, 18, 0.24),
+        inset 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 -30px 60px rgba(0, 0, 0, 0.34);
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     font-size: clamp(2.35rem, 7vw, 5rem);
     font-weight: 750;
     letter-spacing: -0.06em;
     line-height: 1.05;
     text-align: center;
+    animation: banner-reveal 700ms 90ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+#banner::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.16;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+    content: "";
 }
 
 .stylized-t {
@@ -160,6 +207,7 @@ main,
     max-width: none;
     margin: clamp(2.5rem, 6vw, 5rem) auto;
     padding: 0;
+    animation: content-rise 650ms 180ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 #app-home {
@@ -207,9 +255,9 @@ main li + li {
 
 #example-use-cases {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.42fr);
-    gap: clamp(2rem, 6vw, 5rem);
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
     margin-top: 3rem;
 }
 
@@ -228,12 +276,13 @@ main li + li {
 }
 
 #example-images {
-    position: sticky;
-    top: 1.5rem;
+    position: static;
     display: grid;
     width: auto;
     height: auto;
     gap: 1.25rem;
+    align-self: center;
+    animation: images-arrive 680ms 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .ex-images {
@@ -242,6 +291,19 @@ main li + li {
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: var(--shadow);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.ex-images:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 24px 55px rgba(22, 49, 82, 0.17);
+}
+
+/* The original capture has a large blank area below the useful UI. */
+#example-images .ex-images:first-child {
+    aspect-ratio: 0.82;
+    object-fit: cover;
+    object-position: top;
 }
 
 .code,
@@ -403,26 +465,45 @@ main li + li {
 
 /* Footer */
 footer {
+    position: relative;
+    isolation: isolate;
     display: grid;
     grid-template-columns: auto auto auto auto auto minmax(260px, 1fr);
     align-items: center;
     gap: 0.65rem;
-    padding: 2rem max(1.25rem, calc((100vw - 1180px) / 2));
+    padding: 2.4rem max(1.5rem, calc((100vw - 1240px) / 2));
     color: rgba(255, 255, 255, 0.88);
-    background: linear-gradient(120deg, var(--blue-deep), var(--blue-dark));
-    box-shadow: 0 -8px 30px rgba(14, 72, 145, 0.12);
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 150%, rgba(172, 0, 198, 0.28), transparent 36%),
+        linear-gradient(115deg, #083a7b, var(--blue-dark) 60%, #174fa7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 -16px 38px rgba(8, 55, 116, 0.2),
+        inset 0 1px rgba(255, 255, 255, 0.16),
+        inset 0 22px 45px rgba(7, 48, 103, 0.12);
+    animation: footer-arrive 650ms 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+footer::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.11;
+    background: repeating-linear-gradient(135deg, transparent 0 42px, rgba(255, 255, 255, 0.14) 43px 44px);
+    content: "";
 }
 
 #footer-h3 {
     margin: 0 0.5rem 0 0;
     color: #ffffff;
-    font-size: 1.15rem;
+    font-size: 1.4rem;
 }
 
 .footer-logo-div {
     display: grid;
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     margin: 0;
     padding: 0.45rem;
     place-items: center;
@@ -445,7 +526,7 @@ footer {
 
 .footer-link {
     color: #c6edff;
-    font-size: 0.93rem;
+    font-size: 1.08rem;
     font-weight: 600;
 }
 
@@ -459,8 +540,63 @@ footer {
 .footer-text {
     margin: 0;
     color: rgba(255, 255, 255, 0.78);
-    font-size: 0.82rem;
-    line-height: 1.5;
+    font-size: 0.98rem;
+    line-height: 1.55;
+}
+
+@keyframes nav-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes banner-reveal {
+    from {
+        opacity: 0;
+        transform: scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes content-rise {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes images-arrive {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes footer-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 900px) {
@@ -476,8 +612,8 @@ footer {
     }
 
     .top-menu {
-        padding: 0.45rem 0.6rem;
-        font-size: 0.88rem;
+        padding: 0.58rem 0.75rem;
+        font-size: 1rem;
     }
 
     #example-use-cases {
@@ -518,8 +654,8 @@ footer {
     }
 
     #addon-icon {
-        width: 44px;
-        height: 44px;
+        width: 50px;
+        height: 50px;
         border-radius: 12px;
     }
 
@@ -576,7 +712,7 @@ footer {
     }
 
     footer {
-        grid-template-columns: 40px minmax(0, 1fr);
+        grid-template-columns: 46px minmax(0, 1fr);
         gap: 0.5rem 0.75rem;
         padding-block: 1.75rem;
     }
@@ -600,5 +736,7 @@ footer {
     *::after {
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
     }
 }
