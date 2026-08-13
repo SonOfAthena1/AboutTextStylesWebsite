@@ -61,7 +61,7 @@ a:focus-visible {
     overflow: hidden;
     background:
         radial-gradient(circle at 15% -80%, rgba(255, 255, 255, 0.35), transparent 48%),
-        linear-gradient(115deg, #0b52a8 0%, var(--blue) 58%, #4c46d8 130%);
+        linear-gradient(110deg, #2449bd 0%, #3f55ce 48%, #6849cc 100%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     box-shadow:
         0 16px 38px rgba(8, 55, 116, 0.28),
@@ -212,6 +212,10 @@ main,
 
 #app-home {
     width: min(calc(100% - 2.5rem), 1180px);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+    column-gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
 }
 
 h1,
@@ -250,15 +254,17 @@ main li + li {
 }
 
 #about-paragraphs {
+    grid-column: 1;
     max-width: 82ch;
 }
 
 #example-use-cases {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
-    gap: clamp(2rem, 5vw, 4rem);
-    align-items: center;
-    margin-top: 3rem;
+    display: contents;
+}
+
+#example-use-cases > div:first-child {
+    grid-column: 1;
+    margin-top: 1.5rem;
 }
 
 #example-use-cases h3 {
@@ -278,10 +284,13 @@ main li + li {
 #example-images {
     position: static;
     display: grid;
+    grid-column: 2;
+    grid-row: 1 / span 2;
     width: auto;
     height: auto;
     gap: 1.25rem;
-    align-self: center;
+    align-self: start;
+    margin-top: 0.35rem;
     animation: images-arrive 680ms 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -297,13 +306,6 @@ main li + li {
 .ex-images:hover {
     transform: translateY(-4px) scale(1.01);
     box-shadow: 0 24px 55px rgba(22, 49, 82, 0.17);
-}
-
-/* The original capture has a large blank area below the useful UI. */
-#example-images .ex-images:first-child {
-    aspect-ratio: 0.82;
-    object-fit: cover;
-    object-position: top;
 }
 
 .code,
@@ -463,6 +465,25 @@ main li + li {
     color: #344054;
 }
 
+/* Shared section marker used across content pages. */
+#app > h2,
+#app > h3,
+.dev-bio > h3 {
+    position: relative;
+    padding-left: 1rem;
+}
+
+#app > h2::before,
+#app > h3::before,
+.dev-bio > h3::before {
+    position: absolute;
+    inset: 0.08em auto 0.08em 0;
+    width: 4px;
+    border-radius: 999px;
+    background: linear-gradient(var(--blue), var(--purple));
+    content: "";
+}
+
 /* Footer */
 footer {
     position: relative;
@@ -616,13 +637,27 @@ footer::before {
         font-size: 1rem;
     }
 
+    #app-home {
+        display: block;
+    }
+
     #example-use-cases {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    #example-use-cases > div:first-child {
+        margin-top: 0;
     }
 
     #example-images {
         position: static;
+        grid-column: 1;
+        grid-row: auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 0;
     }
 
     footer {
